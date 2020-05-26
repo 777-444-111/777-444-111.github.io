@@ -195,6 +195,7 @@ header {
     padding: 2em;
     width: 80%;
     border: double 5px #696969;
+    font-family: "Andale Mono", "Noto Sans Japanese", -apple-system, BlinkMacSystemFont, "Helvetica Neue", "ヒラギノ角ゴ ProN W3", "Hiragino Kaku Gothic ProN", Arial, Meiryo, sans-serif;
 }
 
 .iframe-containers {
@@ -214,6 +215,10 @@ header {
 .new-infomation-form {
     text-decoration: none;
     color: rgba(100, 100, 100, 1);
+}
+
+.new-infomation-form:hover {
+    color: black;
 }
 
 .iframe {
