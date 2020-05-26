@@ -41,6 +41,7 @@ header {
 .main-container {
     margin: 0;
     padding: 0;
+    /*font-family: 'Lato', 'Noto Sans JP', 'ヒラギノ角ゴ ProN', 'Hiragino Kaku Gothic ProN', 'メイリオ', Meiryo, 'ＭＳ Ｐゴシック', 'MS PGothic', sans-serif;*/
 }
 
 .center-container {
@@ -62,12 +63,14 @@ header {
     border-left: solid 6px #686868;
     box-shadow: 0px 2px 3px rgba(0, 0, 0, 0.33);
     font-weight: 100;
+    /*font-family: 'Lato', 'Noto Sans JP', 'ヒラギノ角ゴ ProN', 'Hiragino Kaku Gothic ProN', 'メイリオ', Meiryo, 'ＭＳ Ｐゴシック', 'MS PGothic', sans-serif;*/
 }
 
 .top-h1 {
     font-size: 50px;
     text-align: center;
     opacity: .8;
+    /*font-family: 'Lato', 'Noto Sans JP', 'ヒラギノ角ゴ ProN', 'Hiragino Kaku Gothic ProN', 'メイリオ', Meiryo, 'ＭＳ Ｐゴシック', 'MS PGothic', sans-serif;*/
     margin: 100px 0;
 }
 
@@ -114,6 +117,7 @@ header {
 .guide-title {
     font-size: 40px;
     opacity: .8;
+    /*font-family: 'Lato', 'Noto Sans JP', 'ヒラギノ角ゴ ProN', 'Hiragino Kaku Gothic ProN', 'メイリオ', Meiryo, 'ＭＳ Ｐゴシック', 'MS PGothic', sans-serif;*/
 }
 
 .partialy-span {
@@ -126,6 +130,7 @@ header {
     margin: 2em 0;
     border: double 5px #696969;
     font-weight: lighter;
+    /*font-family: 'Hiragino Kaku Gothic Pro','ヒラギノ角ゴ Pro W3','メイリオ',Meiryo,'ＭＳ Ｐゴシック',sans-serif;*/
     opacity: .8;
 }
 
@@ -189,6 +194,7 @@ header {
     padding: 2em;
     width: 80%;
     border: double 5px #696969;
+    font-family: "Andale Mono", "Noto Sans Japanese", -apple-system, BlinkMacSystemFont, "Helvetica Neue", "ヒラギノ角ゴ ProN W3", "Hiragino Kaku Gothic ProN", Arial, Meiryo, sans-serif;
 }
 
 .iframe-containers {
@@ -245,6 +251,7 @@ footer {
     margin: 0 auto;
     padding: 10px;
     text-align: left;
+    /*font-family: "Andale Mono", "Noto Sans Japanese", -apple-system, BlinkMacSystemFont, "Helvetica Neue", "ヒラギノ角ゴ ProN W3", "Hiragino Kaku Gothic ProN", Arial, Meiryo, sans-serif;*/
 }
 
 .infomation-span {
