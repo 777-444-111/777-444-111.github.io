@@ -169,7 +169,7 @@ header {
     height: 500px;
     margin: 0 auto;
     padding: 2em;
-    width: 70%;
+    width: 80%;
     border-radius: 10px;
     overflow: scroll;
 }
@@ -207,5 +207,5 @@ footer {
 }
 
 .i-help {
-    font-size: 15px;
+    font-size: 10px;
 }
