@@ -1,0 +1,209 @@
+/* html・bodyのmargin・paddingのリセットなので削除しないようにしてください */
+
+* {
+    margin: 0;
+    padding: 0;
+    font-weight: lighter;
+    color: #3f3f3f;
+}
+
+html {
+    margin: 0;
+    padding: 0;
+    font-family: "Montserrat","游ゴシック",YuGothic,"ヒラギノ角ゴ ProN W3","Hiragino Kaku Gothic ProN","メイリオ",Meiryo,sans-serif;
+    background-color:rgba(216, 216, 216, 0.5);
+}
+
+ul {
+    list-style: none;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+/* ここまでがhtml・bodyのmargin・paddingのリッセットです */
+
+/* ここからがヘッダー */
+header {
+    background-color: white;
+}
+
+.main-header {
+    height: 60px;
+    display: flex;
+    width: 100%;
+    background-color: #696969;
+    position: fixed;
+    z-index: 10;
+}
+
+.mh-logo {
+    width: -webkit-clack(100% / 5);
+    margin: auto;
+}
+
+/* ここはボタン関連のcssとなります */
+.btn {
+    border-radius: 25px;
+    background-color: rgb(255, 255, 255);
+    padding: 0;
+    text-align: center;
+    color: #b1afaf;
+    width: 75px;
+    height: 50px;
+    font-size: 12.5px;
+    cursor: pointer;
+}
+  
+.btn:hover {
+      color: #696969;
+  }
+  /* ここまで */
+.border {
+    padding: 0;
+    border-top: 1px solid #696969;
+}
+
+/* ここまでがヘッダー */
+
+/* ここからがメインとなるところ */ /* 背景色はrgb(232, 255, 101)がデフォルトです */
+.main-containers {
+    padding: 50px;
+}
+
+.mc-navigation {
+    margin: 100px;
+}
+
+.mc-title {
+    margin: 0 auto;
+    margin-top: 100px;
+    margin-bottom: 100px;
+    font-size: 20px;
+    text-align: center;
+    padding: 0.5em;
+    color: #3f3f3f;
+    width: 60%;
+    box-shadow: 2px 2px 4px #b3b3b3;
+    border-radius: 10px;
+}
+
+.p-span {
+    color: #2e2effdc;
+}
+
+.p-span2 {
+    color: #ff3c3ce7;
+}
+
+.mct-span { 
+    color: #2889d8;
+}
+
+.mct-span2 {
+    color: #4ecf2e;
+}
+
+.mct-span3 {
+    color: #d64141;
+}
+
+.guide {
+    margin: 100px 0px 100px 0px;
+}
+
+.g-title {
+    margin: 0 auto;
+    padding: 0.75em;
+    width: 50%;
+    text-align: center;
+    box-shadow: 2px 2px 4px #b3b3b3;
+    border-radius: 10px;
+    font-size: 20px;
+}
+
+.answer {
+    margin: 75px auto;
+    padding: 1.5em;
+    width: 50%;
+    border: double 5px #444444;
+    border-radius: 10px;
+    font-size: 7.5px;
+}
+
+.learn-container {
+    margin: 100px 0px 0px 0px;
+}
+
+.l-title {
+    margin: 0 auto;
+    padding: 0.75em;
+    width: 50%;
+    text-align: center;
+    box-shadow: 2px 2px 4px #b3b3b3;
+    border-radius: 10px;
+    font-size: 20px;
+}
+
+.l-answer {
+    margin: 75px auto 0 auto;
+    margin-bottom: 100px;
+    padding: 1.5em;
+    width: 50%;
+    border: double 5px #444444;
+    border-radius: 10px;
+    font-size: 7.5px;
+}
+
+.frame-containers {
+    margin: 75px;
+    padding: 0;
+    margin-bottom: 100px;
+}
+
+.f-container {
+    background-color: #fdfdfd;
+    height: 500px;
+    margin: 0 auto;
+    padding: 2em;
+    width: 70%;
+    border-radius: 10px;
+    overflow: scroll;
+}
+
+.frame {
+    text-align: center;
+}
+
+.new-i {
+    text-decoration: none;
+    color: #20202081;
+}
+
+.new-i:hover {
+    color: #404040;
+}
+
+footer {
+    padding: 0 50px;
+}
+
+.information {
+    margin: 100px 0px 50px 0px;
+    opacity: .7;
+}
+
+.footer-form {
+    text-decoration: none;
+    color: #20202081;
+}
+
+.footer-form:hover {
+    color: #404040;
+    opacity: 1;
+}
+
+.i-help {
+    font-size: 15px;
+}
