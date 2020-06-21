@@ -91,23 +91,23 @@ header {
     border-radius: 10px;
 }
 
-.p-span {
+.p-fi-span {
     color: #2e2effdc;
 }
 
-.p-span2 {
+.p-se-span {
     color: #ff3c3ce7;
 }
 
-.mct-span { 
+.mct-fi-span { 
     color: #2889d8;
 }
 
-.mct-span2 {
+.mct-se-span {
     color: #4ecf2e;
 }
 
-.mct-span3 {
+.mct-th-span {
     color: #d64141;
 }
 
