@@ -1,9 +1,21 @@
 /* html・bodyのmargin・paddingのリセットなので削除しないようにしてください */
 
+* {
+    margin: 0;
+    padding: 0;
+    font-weight: lighter;
+    color: #3f3f3f;
+}
+
 html {
     margin: 0;
     padding: 0;
     font-family: "Montserrat","游ゴシック",YuGothic,"ヒラギノ角ゴ ProN W3","Hiragino Kaku Gothic ProN","メイリオ",Meiryo,sans-serif;
+    background-color:rgba(216, 216, 216, 0.5);
+}
+
+ul {
+    list-style: none;
 }
 
 body {
@@ -18,263 +30,176 @@ header {
 }
 
 .main-header {
-    display: flex;
     height: 60px;
     display: flex;
     width: 100%;
     background-color: #696969;
     position: fixed;
     z-index: 10;
-
 }
 
-.logo {
+.mh-logo {
     font-size: 20px;
-    width: 1/5;
+    width: -webkit-clack(100% / 5);
     margin: auto;
+}
+
+/* ここはボタン関連のcssとなります */
+.btn {
+    border-radius: 25px;
+    background-color: rgb(255, 255, 255);
+    padding: 10px 50px;
+    text-align: center;
+    color: #b1afaf;
+    width: 175px;
+    height: 50px;
+    font-size: 20px;
+    cursor: pointer;
+}
+  
+.btn:hover {
+      color: #696969;
+  }
+  /* ここまで */
+.border {
+    padding: 0;
+    border-top: 1px solid #696969;
 }
 
 /* ここまでがヘッダー */
 
 /* ここからがメインとなるところ */ /* 背景色はrgb(232, 255, 101)がデフォルトです */
-
-.main-container {
-    margin: 0;
-    padding: 0;
-}
-
-.center-container {
-    height: 3000px;
-    background-color:rgba(216, 216, 216, 0.5);
+.main-containers {
     padding: 50px;
 }
 
-.top-title {
-    margin-top: 0;
-    padding: 30px;
-    text-align: center;
-    font-size: 30px;
-    opacity: .8;
-    width: 500px;
-    margin: 0 auto;
-    padding: 0.5em 1em;
-    background: #f4f4f4;
-    border-left: solid 6px #686868;
-    box-shadow: 0px 2px 3px rgba(0, 0, 0, 0.33);
-    font-weight: 100;
+.mc-navigation {
+    margin: 100px;
 }
 
-.top-h1 {
-    font-size: 50px;
-    text-align: center;
-    opacity: .8;
-    margin: 100px 0;
-}
-
-.partial-span {
-    color: #0077ff;
-}
-
-.partial-span2 {
-    color: #ff544e;
-}
-
-.guide-title {
-    padding: 0.5em 1em;
-    margin: 0 auto;
-    text-align: center;
-    background: rgb(255, 255, 255);
-    box-shadow: 10px 10px rgba(0, 0, 0, 0.7);
-    border-radius: 9px;
-    width: 400px;
-    font-weight: 100;
-}
-
-.btn {
-  border-radius: 25px;
-  background-color: rgb(255, 255, 255);
-  padding: 10px 50px;
-  text-align: center;
-  color: #b1afaf;
-  width:200px;
-  height: 50px;
-  font-size: 20px;
-  cursor: pointer;
-}
-
-.btn:hover {
-    color: #696969;
-}
-
-.question {
+.mc-title {
     margin: 0 auto;
     margin-top: 100px;
+    margin-bottom: 100px;
+    font-size: 50px;
+    text-align: center;
+    padding: 0.5em;
+    color: #3f3f3f;
+    font-weight: lighter;
     width: 60%;
+    box-shadow: 2px 2px 4px #b3b3b3;
+    border-radius: 10px;
 }
 
-.guide-title {
+.p-span {
+    color: #2e2effdc;
+}
+
+.p-span2 {
+    color: #ff3c3ce7;
+}
+
+.mct-span { 
+    color: #2889d8;
+}
+
+.mct-span2 {
+    color: #4ecf2e;
+}
+
+.mct-span3 {
+    color: #d64141;
+}
+
+.guide {
+    margin: 100px 0px 100px 0px;
+}
+
+.g-title {
+    margin: 0 auto;
+    padding: 0.75em;
+    width: 50%;
+    text-align: center;
+    box-shadow: 2px 2px 4px #b3b3b3;
+    border-radius: 10px;
     font-size: 40px;
-    opacity: .8;
-}
-
-.partialy-span {
-    color: #07f;
 }
 
 .answer {
-    font-size: 20px;
+    margin: 75px auto;
     padding: 1.5em;
-    margin: 2em 0;
-    margin-bottom: 100px;
-    border: double 5px #696969;
-    font-weight: lighter;
-    opacity: .8;
+    width: 50%;
+    border: double 5px #444444;
+    border-radius: 10px;
 }
 
-.help {
-    width: 60%;
+.learn-container {
+    margin: 100px 0px 0px 0px;
+}
+
+.l-title {
     margin: 0 auto;
-    margin-top: 100px;
-}
-
-.help-title{
-    padding: 1em;
-    font-size: 40px;
-    opacity: .8;
-    background: rgb(255, 255, 255);
-    box-shadow: 10px 10px rgba(0, 0, 0, 0.7);
-    border-radius: 9px;
-}
-
-.border{
-    border-bottom: 1px solid black;
-    padding: 0 50px;
-    margin: 0;
-}
-
-.learn-navigation {
-    margin: 0 auto;
-    width: 90%;
-}
-
-.learn-title{
-    margin: 0 auto;
-    padding: 0.5em;
-    font-size: 40px;
-    opacity: .8;
+    padding: 0.75em;
+    width: 50%;
     text-align: center;
-    margin-top: 100px;
-    position: relative;
-    border-top: solid 2px black;
-    border-bottom: solid 2px black;
-    width: 40%;
-}
-.learn-title:before, .learn-title:after{
-    content: '';
-    position: absolute;
-    top: -10px;
-    width: 2px;
-    height: -webkit-calc(100% + 20px);
-    height: calc(100% + 20px);
-    background-color: black;
-}
-.learn-title:before {
-    left: 10px;
-}
-.learn-title:after {
-    right: 10px;
+    box-shadow: 2px 2px 4px #b3b3b3;
+    border-radius: 10px;
+    font-size: 40px;
 }
 
-.learn-title {
-    font-weight: 100;
+.l-answer {
+    margin: 75px auto 100px auto;
+    margin-bottom: 100px;
+    padding: 1.5em;
+    width: 50%;
+    border: double 5px #444444;
+    border-radius: 10px;
 }
 
-.learn-introduction {
-    margin: 0 auto;
+.frame-containers {
+    margin: 0;
     margin-top: 75px;
     margin-bottom: 100px;
+}
+
+.f-container {
+    background-color: #fdfdfd;
+    height: 500px;
+    margin: 0 auto;
     padding: 2em;
-    width: 80%;
-    border: double 5px #696969;
-}
-
-.iframe-containers {
-    background-color:rgba(216, 216, 216, 0.5);
-    padding: 50px;
-}
-
-.iframe-container {
-    width: 90%;
-    margin: 0 auto;
-    margin-bottom: 100px;
-}
-
-.new-infomation-form {
-    text-decoration: none;
-    color: rgba(100, 100, 100, 1);
-}
-
-.new-infomation-form:hover {
-    color: black;
-}
-
-.iframe {
-    margin: 0 auto;
-    margin-top: 50px;
-    padding: 20px;
+    width: 50%;
+    border-radius: 10px;
     overflow: scroll;
-    height: 175px;
-    background-color: rgb(255, 255, 255);
 }
 
-ul {
-    list-style: none;
-    margin: 0;
+.frame {
+    text-align: center;
 }
 
-/* ここまでがメインとなるところ */
+.new-i {
+    text-decoration: none;
+    color: #20202081;
+}
 
-/* ここからがフッター */
+.new-i:hover {
+    color: #404040;
+}
+
 footer {
-    background-color:rgba(216, 216, 216, 0.5);
+    padding: 0 50px;
 }
 
-.infomation-containers{
-    padding: 40px;
-}
-
-.infomation-container {
-    width: 90%;
-    margin: 0 auto;
-}
-
-.infomation-explanatory {
-    margin: 0 auto;
-    padding: 10px;
-    text-align: left;
-    font-weight: 100;
-}
-
-.infomation-span {
-    font-size: 15px;
-}
-
-.major-i-e {
-    margin-top: 50px;
+.information {
+    margin: 100px 0px 50px 0px;
+    opacity: .7;
 }
 
 .footer-form {
-    color: rgba(100, 100, 100, 0.8);
     text-decoration: none;
-    font-weight: 100;
-}
-
-.footer-form:visited {
-    color: rgba(100, 100, 100, 0.5);
+    color: #20202081;
 }
 
 .footer-form:hover {
-    color: black;
+    color: #404040;
+    opacity: 1;
 }
-
-/* ここまでがフッター */
