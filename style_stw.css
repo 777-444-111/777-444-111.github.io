@@ -1,205 +1,203 @@
-/* html・bodyのmargin・paddingのリセットなので削除しないようにしてください */
-
 * {
     margin: 0;
     padding: 0;
-    font-weight: lighter;
-    color: #3f3f3f;
-}
-
-html {
-    margin: 0;
-    padding: 0;
-    font-family: "Montserrat","游ゴシック",YuGothic,"ヒラギノ角ゴ ProN W3","Hiragino Kaku Gothic ProN","メイリオ",Meiryo,sans-serif;
-    background-color:rgba(216, 216, 216, 0.5);
+    font-family: 'Noto Sans JP', sans-serif;
+    font-weight: 100;
+    color: #333333;
 }
 
 ul {
     list-style: none;
 }
 
-body {
-    margin: 0;
+.border {
+    margin: 0 auto;
     padding: 0;
+    width: 90%;
+    border-bottom: 1px solid #696969;
 }
-/* ここまでがhtml・bodyのmargin・paddingのリッセットです */
 
-/* ここからがヘッダー */
+/* 共通 */
+
 header {
-    background-color: white;
+    text-align: center;
+    height: 50px;
+    border-bottom: 1px solid #696969;
 }
 
-.main-header {
-    height: 60px;
-    display: flex;
+h1 {
+    font-size: 30px;
+}
+
+a {
+    display: inline-block;
+    width: 75px;
+    text-decoration: none;
+    color: #0084ff;
+}
+
+a:visited {
+    color: #0084ff;
+}
+
+.h-box {
     width: 100%;
+    height: 50px;
+    display: flex;
+    position: fixed;
+    border-bottom: 1px solid #2da0ffb2;
+}
+
+.btn {
+    padding: 0;
+    width: 20%;
+    font-size: 30px;
+    text-align: center;
+    display: inline-block;
+    background-color: #ffffff;
+}
+
+.border-btn {
+    border-left: 1px solid #2da0ffb2;
+}
+
+.up-btn {
+    width: 100px;
+    height: 100px;
+    margin-top: 475px;
+    margin-right: 50px;
+    right: 0;
     background-color: #696969;
     position: fixed;
-    z-index: 10;
+    border-radius: 50px;
 }
 
-.mh-logo {
+.fa-angle-double-up {
+    display: inline-block;
+    margin-top: 25px;
+    font-size: 3em;
+    color: white;
+}
+
+.container {
+    width: 100%;
     font-size: 20px;
-    width: -webkit-clack(100% / 5);
-    margin: auto;
-}
-
-/* ここはボタン関連のcssとなります */
-.btn {
-    border-radius: 25px;
-    background-color: rgb(255, 255, 255);
-    padding: 10px 50px;
     text-align: center;
-    color: #b1afaf;
-    width: 175px;
-    height: 50px;
-    font-size: 20px;
-    cursor: pointer;
-}
-  
-.btn:hover {
-      color: #696969;
-  }
-  /* ここまで */
-.border {
-    padding: 0;
-    border-top: 1px solid #696969;
+    margin-top: 100px;
 }
 
-/* ここまでがヘッダー */
-
-/* ここからがメインとなるところ */ /* 背景色はrgb(232, 255, 101)がデフォルトです */
-.main-containers {
-    padding: 50px;
+.catch-copy {
+    text-align: left;
+    width: 75%;
+    margin: 0px;
+    margin-left: 4.8%;
+    margin-bottom: 100px;
+    font-size: 125px;
+    box-shadow: none;
 }
 
-.mc-navigation {
-    margin: 100px;
-}
-
-.mc-title {
+.title-name {
+    text-align: center;
+    width: 75%;
     margin: 0 auto;
     margin-top: 100px;
     margin-bottom: 100px;
-    font-size: 50px;
-    text-align: center;
-    padding: 0.5em;
-    color: #3f3f3f;
-    font-weight: lighter;
-    width: 60%;
-    box-shadow: 2px 2px 4px #b3b3b3;
-    border-radius: 10px;
+    font-size: 100px;
 }
 
-.ac-span {
-    color: #2889d8;
-}
-
-.se-acc-span {
-    color: #ff3c3ce7;
-}
-
-.s-span { 
-    color: #2889d8;
-}
-
-.t-span {
-    color: #4ecf2e;
-}
-
-.w-span {
-    color: #d64141;
-}
-
-.guide {
-    margin: 100px 0px 100px 0px;
-}
-
-.g-title {
-    margin: 0 auto;
-    padding: 0.75em;
+.title {
     width: 50%;
-    text-align: center;
-    box-shadow: 2px 2px 4px #b3b3b3;
+    margin: 0 auto;
     border-radius: 10px;
-    font-size: 40px;
+    padding: 10px;
+    font-size: 50px;
+    margin-top: 100px;
+    margin-bottom: 100px;
+    box-shadow: 2px 2px 4px #b3b3b3;
+}
+
+.blue {
+    color: #0084ff;
+}
+
+.red {
+    color: #e2185b;
+}
+
+.question {
+    width: 50%;
+    border-radius: 10px;
+    padding: 10px;
+    margin: 0 auto;
+    font-size: 50px;
+    margin-top: 100px;
+    margin-bottom: 100px;
+    box-shadow: 2px 2px 4px #b3b3b3;
 }
 
 .answer {
-    margin: 75px auto;
-    padding: 1.5em;
-    width: 50%;
-    border: double 5px #444444;
-    border-radius: 10px;
+    margin: 100px;
+    padding: 25px 100px 25px 100px;
+    text-align: left;
 }
 
-.learn-container {
-    margin: 100px 0px 0px 0px;
+.lessons {
+    width: 90%;
+    margin: 0 auto;
+    margin-top: 100px;
+    margin-bottom: 100px;
+    display: flex;
+    box-sizing: border-box;
+}
+
+.lesson-box {
+    margin: 0 auto;
+    width: 20%;
+    padding: 0 20px 0 20px;
+}
+
+.lesson-box:first-child {
+    padding-left: 0;
+}
+
+.lesson-box:last-child {
+    padding-right: 0;
+}
+
+.lesson {
+    text-align: center;
+    border: double 5px #696969;
+    padding: 15px 40px 15px 40px;
+    font-size: 30px;
 }
 
 .l-title {
-    margin: 0 auto;
-    padding: 0.75em;
-    width: 50%;
     text-align: center;
-    box-shadow: 2px 2px 4px #b3b3b3;
+    padding-bottom: 10px;
+    font-size: 20px;
+}
+
+.e-box {
+    margin: 20px 0 0 0;
+    padding: 15px;
     border-radius: 10px;
-    font-size: 40px;
-}
-
-.l-answer {
-    margin: 75px auto 100px auto;
-    margin-bottom: 100px;
-    padding: 1.5em;
-    width: 50%;
-    border: double 5px #444444;
-    border-radius: 10px;
-}
-
-.frame-containers {
-    margin: 0;
-    margin-top: 75px;
-    margin-bottom: 100px;
-}
-
-.f-container {
-    background-color: #fdfdfd;
-    height: 500px;
-    margin: 0 auto;
-    padding: 2em;
-    width: 50%;
-    border-radius: 10px;
-    overflow: scroll;
-}
-
-.frame {
-    text-align: center;
-}
-
-.new-i {
-    text-decoration: none;
-    color: #20202081;
-}
-
-.new-i:hover {
-    color: #404040;
+    box-shadow: 2px 2px 4px #c4c4c4;
+    color: #333;
 }
 
 footer {
-    padding: 0 50px;
+    width: 90%;
+    margin: 0 auto;
 }
 
-.information {
-    margin: 100px 0px 50px 0px;
-    opacity: .7;
+.f-box {
+    margin-top: 100px;
+    margin-bottom: 100px;
+    font-size: 50px;
 }
 
-.footer-form {
-    text-decoration: none;
-    color: #20202081;
-}
-
-.footer-form:hover {
-    color: #404040;
-    opacity: 1;
+.form {
+    width: 300px;
+    margin-top: 50px;
+    font-size: 20px;
 }
